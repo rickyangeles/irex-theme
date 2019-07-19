@@ -40,6 +40,5 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'irex-theme'
 );
 
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
 //Optional: Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
