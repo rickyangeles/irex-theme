@@ -12,3 +12,8 @@
  Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
  GitHub Theme URI: holger1411/understrap-child
 */
+
+
+header {
+    display: none;
+}
