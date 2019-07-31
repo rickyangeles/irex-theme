@@ -22,3 +22,6 @@
     background-color: WhiteSmoke;
     color: black!important;
 }
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}

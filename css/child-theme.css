@@ -11646,4 +11646,7 @@ figure.woocommerce-product-gallery__wrapper {
   background-color: WhiteSmoke;
   color: black !important; }
 
+.dropdown:hover > .dropdown-menu {
+  display: block; }
+
 /*# sourceMappingURL=child-theme.css.map */
