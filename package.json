@@ -37,7 +37,6 @@
     "gulp-ignore": "^2.0.2",
     "gulp-imagemin": "^5.0.3",
     "gulp-merge": "^0.1.1",
-    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-rimraf": "^0.2.2",
@@ -51,5 +50,8 @@
     "run-sequence": "^2.2.1",
     "understrap": "^0.9.1",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-plumber": "^1.2.1"
   }
 }

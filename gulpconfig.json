@@ -11,6 +11,7 @@
   "paths" : {
     "js": "./js",
     "css": "./css",
+    "css": "./style",
     "img": "./img",
 		"imgsrc": "./src/img",
     "sass": "./sass",

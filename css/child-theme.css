@@ -11636,4 +11636,14 @@ figure.woocommerce-product-gallery__wrapper {
     color: #dc3545;
     border: 1px solid #e9ecef; }
 
+/* Making the 3rd level menus show up */
+.menu-item-has-children .menu-item-has-children:hover > .dropdown-menu {
+  display: inline-block;
+  left: 9em;
+  top: -1ex; }
+
+.menu-item-has-children .menu-item-has-children:hover {
+  background-color: WhiteSmoke;
+  color: black !important; }
+
 /*# sourceMappingURL=child-theme.css.map */

@@ -17,3 +17,13 @@
 header {
     display: none;
 }
+
+.menu-item-has-children .menu-item-has-children:hover > .dropdown-menu {
+  display: inline-block;
+  left: 9em;
+  top: -1ex;
+}
+.menu-item-has-children .menu-item-has-children:hover {
+    background-color: WhiteSmoke;
+    color: black!important;
+}
