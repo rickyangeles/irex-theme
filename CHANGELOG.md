@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.3
+- made parent pages on the nav clickable
 
 ## 0.0.2.3
 - add more depth to child pages in menu

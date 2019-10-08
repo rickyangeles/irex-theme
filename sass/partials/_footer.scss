@@ -1,0 +1,123 @@
+
+/* Footer Styles */
+.footer-menu {
+    background-color: $primary;
+    text-align: center;
+    padding: 0;
+
+    ul {
+        padding-left: 0;
+        overflow: hidden;
+        margin: 47px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @include media-breakpoint-down(md) {
+        ul {
+            flex-direction: column;
+                margin: 30px 0;
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+    li {
+        list-style-type: none;
+        float: left;
+        margin: 0 25px 0 25px; 
+
+        &:last-child {
+            a {
+                    background-color: $secondary;
+                padding: 10px 20px;
+                border-radius: $rounded-pill;
+                display: inline-block;
+            }
+        }
+        a {
+            font-family: $font-family-mont;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            display:table-cell;
+            vertical-align : middle;
+        }
+    }
+}
+.footer {
+    padding: 50px 0;
+    background: $dark;
+    color: $white;
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-social-media {
+        padding-left: 0;
+        li {
+            color: white;
+            width: 48px;
+            height: 48px;
+            border: 2px solid white;
+            border-radius: 50%;
+            list-style-type: none;
+            margin-right: 15px;
+            a {
+                font-size: 30px;
+                padding: 8px 5px 3px 10px;
+                line-height: 1.6;
+                color: white;
+            }
+        }
+    }
+    p {
+        margin: 45px 0;
+    }
+    .footer-contact-info {
+        line-height: 25px;
+        strong {
+            color: $secondary;
+            font-weight: normal;
+        }
+
+        ul {
+            padding-left: 0;
+            li {
+                list-style-type: none;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .footer-logo {
+            width: 50%;
+            margin: 0 25%;
+        }
+
+        .footer-social-media {
+            text-align:center;
+            margin-top: 20px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    padding-left: 7px;
+                }
+            }
+        }
+    }
+}
+
+.subfooter {
+    background-color: $white;
+    color: $primary;
+    padding: 30px 0;
+    text-align:center;
+
+    a {
+        color: inherit;
+    }
+}

@@ -1,0 +1,450 @@
+.home-banner {
+    margin-top: 113px;
+    position: relative;
+
+    .banner-content {
+        position: absolute;
+        bottom: 0;
+        max-width: 1000px;
+        margin: 50px auto 20px;
+        text-align:center;
+        left: 0;
+        right: 0;
+        h1 {
+            color: white;
+            font-size: 40px;
+        }
+
+        ul {
+            display: inline-block;
+            text-align:center;
+            overflow: hidden;
+            padding: 0;
+            li {
+                float: left;
+                list-style-type: none;
+
+                a {
+                    font-size: 16px;
+                    padding: 8px 50px;
+                    margin: 10px 20px 0;
+                    border-radius: 18px;
+                }
+                .btn-primary {
+                    background-color: white;
+                    border-color: white;
+                    color: $primary;
+                }
+
+                .btn-secondary {
+                    background-color: transparent;
+                    border-color: white;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.home-intro {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100px;
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+        position: absolute;
+        bottom: 0;
+        height: 180px;
+    }
+    .row {
+        max-width: 1200px; width: 100%;
+        margin: 70px auto;
+        position: relative;
+        z-index: 8;
+    }
+    .home-intro-left {
+        h2, h3 {
+            color: $primary;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.6;
+        }
+
+        a.learn-more {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        p {
+            line-height: 2;
+        }
+    }
+}
+
+.home-major-points {
+    padding-top: 70px;
+    color: $primary;
+    .point {
+        margin-bottom:60px;
+        transition: all .2s ease;
+
+        .livicon-evo {
+            width: 25%;
+            float: left;
+            margin-right: 4%;
+            //padding: 30px 30px 30px 0;
+        }
+    }
+    .point:not(:hover) {
+        opacity: .6;
+        transition: all .2s ease;
+    }
+}
+
+.home-industries {
+    background: linear-gradient(90deg, rgba(35,31,32,0.58) 0%, rgba(35,31,32,0.81) 100%);
+    background-size: cover;
+    padding: 100px 0;
+    .row {
+        max-width: 1200px; width: 100%;
+        margin: 0 auto;
+
+        h2.title {
+            width: 100%;
+            text-align:center;
+            color: white;
+        }
+
+        ul.industry-list {
+            width: 100%;
+            display: block;
+            padding-left: 0;
+            margin-top: 50px;
+            li {
+                width: 33%;
+                float:left;
+                text-align: center;
+                list-style-type: none;
+                margin: 13px 0;
+                color: white;
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        color: $secondary;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.home-contractor, .subsidiary-service, .page-contractor {
+    .row {
+        &:first-of-type {
+            padding: 80px 0;
+        }
+
+        &.contractor-cta {
+            padding: 80px 0;
+        }
+    }
+
+    .folding-menu {
+      /* remove inline-block extra spacing */
+      font-size: 0;
+      padding: 0;
+    }
+
+    .folding-menu li { list-style-type: none; }
+
+    .unfolded-content {
+        font-size: 15px;
+        background-color: $white;
+        box-sizing: border-box;
+        position: relative;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+
+    .active-item {
+        position: relative;
+    }
+
+    .active-item:after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: calc( 50% - 40px );
+        bottom: -30px;
+        border-bottom: 20px solid $primary;
+        border-right: 40px solid transparent;
+        border-top: 00px solid transparent;
+        border-left: 40px solid transparent;
+        z-index: 10;
+        transition: border-top-color 0.3s;
+    }
+
+    .close-unfolded-content {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        background: #fff;
+        transition: color 0.3s, background 0.3s;
+    }
+
+    .close-unfolded-content:hover {
+        color: #fff;
+        background: #444;
+    }
+
+    .folding-content, .unfolded-content { display: none; }
+
+    .unfolded-content .folding-content { display: block; }
+
+    .menu-item:hover, .close-unfolded-content:hover { cursor: pointer; }
+
+    .single-sub {
+        margin: 30px 0;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+.single-sub-info {
+    color: $primary;
+    overflow: hidden;
+    border-top: 5px solid $primary;
+    border-bottom: 5px solid $primary;
+    display: none;
+    box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.5);
+
+    .row {
+        max-width: 1200px; width: 100%;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+    }
+}
+
+.page-contractor {
+    .contractor-cta {
+        padding: 60px 0;
+    }
+}
+
+.home-featured-projects {
+    padding: 40px 0;
+    h2.title {
+        text-align:center;
+        width: 100%;
+        margin-bottom: 40px;
+        color: $primary;
+    }
+    .fp-btn {
+        width: 100%;
+        display: block;
+        margin-top: 60px;
+    }
+    .single-featured-project {
+        &:nth-child(-n+2) {
+            margin-bottom: 40px;
+        }
+
+        &:hover {
+            .sfp-left {
+                transition: all .2s ease;
+                background-color: $primary;
+                color: $white;
+                border-color: $primary;
+                box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.18);
+
+                p {
+                    color: inherit;
+                }
+
+                h5 {
+                    color: $white;
+                }
+            }
+
+            .sfp-right {
+                transition: all .2s ease;
+                img {
+                    opacity: .4;
+                }
+
+                a {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .sfp-left, .sfp-right {
+        width: 50%;
+        float:left;
+    }
+
+    .sfp-left {
+        transition: all .2s ease;
+        padding: 40px 30px;
+        border: 2px solid #E8EEF4;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+        border-radius: 10px 0 0 10px;
+        border-right: none;
+        color: $light;
+
+        h5 {
+            color: $light;
+        }
+
+        p {
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+    }
+
+    .sfp-right {
+        transition: all .2s ease;
+        position: relative;
+        background-color: $primary;
+
+        span {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+
+            a {
+                color: $primary;
+                background-color: $white;
+                border-radius: 20px;
+                padding: 5px 25px;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+/* Career Sections */
+.home-career {
+    padding: 30px 0 70px;
+    background-size: cover;
+    .row {
+        max-width: 1200px; width: 100%;
+        margin: 70px auto;
+        position: relative;
+    }
+    h2.title {
+        text-align:center;
+        color: $primary;
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .hc-left {
+        color: $primary;
+
+        .career-award {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        p {
+            color: inherit;
+            line-height: 2;
+        }
+        h2 {
+            color: inherit;
+        }
+    }
+
+    .hc-right {
+        .swiper-container {
+            .slide-caption {
+                font-weight: lighter;
+                font-size: 14px;
+                padding: 20px;
+                background-color: $primary;
+                color: white;
+                font-style: italic;
+            }
+            .swiper-button-prev, .swiper-button-next {
+                width: 40px;
+                height: 40px;
+                background-color: white;
+                border-radius: 40px;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+                &:after {
+                    font-size: 21px;
+                    font-weight: bold;
+                    color: blue;
+                    height: 30px;
+                }
+            }
+
+            .swiper-pagination-bullet {
+                height: 17px; width: 17px;
+                background-color: $primary;
+                border: 3px solid $white;
+                opacity: 1;
+                margin: 0 5px;
+            }
+
+            .swiper-container-horizontal > .swiper-pagination-bullets {
+                bottom: 100px;
+                margin-top: 10px;
+            }
+
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background-color: $secondary;
+                border: 3px solid $white;
+            }
+            .swiper-pagination {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .nav-wrap {
+                display: block;
+                width: 50%;
+                height: 40px;
+                position: relative;
+                margin: 0 auto;
+                top: -170px;
+            }
+        }
+    }
+}

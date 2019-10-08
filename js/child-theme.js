@@ -11,6 +11,12 @@
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
 
+  /* Getting list of Services from Subsidiary */
+
+  function tryMe(arg) {
+      document.write(arg);
+  }
+
   function _defineProperties(target, props) {
     for (var i = 0; i < props.length; i++) {
       var descriptor = props[i];

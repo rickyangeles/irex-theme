@@ -1,0 +1,368 @@
+/* Page Header */
+
+.page-header {
+    position: relative;
+    padding: 0;
+    padding-top: 140px;
+    background-color: $primary;
+    box-sizing: content-box;
+
+    img {
+        width: 100%;
+    }
+    .page-title {
+        color: $white;
+        font-size: 60px;
+        line-height: 1;
+        position: absolute;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        left: 0; right: 0; bottom: 30px;
+        padding: 0 30px;
+    }
+    &.skinny-header {
+        height: 126px;
+        .row {
+            position: relative;
+        }
+
+        h1 {
+            line-height: 1;
+            padding: 40px 0;
+        }
+    }
+}
+
+
+.main-content {
+    padding-bottom: 70px;
+    .row {
+        margin: 40px auto;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    h5 {
+        font-weight: normal;
+        color: $primary;
+        line-height: 2;
+    }
+    .left-content {
+        color: $primary;
+        line-height: 1.6;
+    }
+
+    .slideshow {
+        .swiper-container {
+
+            img {
+                max-width: 757px; width: 100%;
+                max-height: 482px; height: 100%;
+            }
+            .slide-caption {
+                font-weight: lighter;
+                font-size: 14px;
+                padding: 20px;
+                background-color: $primary-light;
+                color: $primary;
+                font-style: italic;
+            }
+            .swiper-button-prev, .swiper-button-next {
+                width: 40px;
+                height: 40px;
+                background-color: white;
+                border-radius: 40px;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+                &:after {
+                    font-size: 21px;
+                    font-weight: bold;
+                    color: blue;
+                    height: 30px;
+                }
+            }
+
+            .swiper-pagination-bullet {
+                height: 17px; width: 17px;
+                background-color: $primary;
+                border: 3px solid $white;
+                opacity: 1;
+                margin: 0 5px;
+            }
+
+            .swiper-container-horizontal > .swiper-pagination-bullets {
+                bottom: 100px;
+                margin-top: 10px;
+            }
+
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background-color: $secondary;
+                border: 3px solid $white;
+            }
+            .swiper-pagination {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .nav-wrap {
+                display: block;
+                width: 50%;
+                height: 40px;
+                position: relative;
+                margin: 0 auto;
+                top: -170px;
+            }
+        }
+    }
+}
+
+
+/* Service Archive Styles */
+
+.page-contractor {
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    .row {
+        max-width: 1200px; width: 100%;
+        margin: 60px auto 0;
+        left: 0; right: 0; bottom: 0;
+        padding: 0 15px;
+        &:first-of-type {
+            padding: 0 0 50px 0;
+        }
+        &.contractor-cta {
+            padding: 10px 0;
+        }
+    }
+
+    .service-title {
+        max-width: 1200px; width: 100%;
+        margin: 0 auto;
+        padding: 50px 15px 0;
+    }
+}
+
+.service-cta {
+    p {
+        color:$light;
+    }
+}
+
+
+// [data-toggle="collapse"].collapsed i {
+//     transform: rotate(180deg);
+// }
+
+.card {
+    border: none;
+
+    &:nth-child(even) {
+        .card-header {
+            background-color: #D0DEEC;
+        }
+    }
+    &:nth-child(odd) {
+        .card-header {
+            background-color: #E6EEF7;
+        }
+    }
+    .card-header {
+        background-color: $primary;
+        color: $primary;
+        border-radius: 0;
+        padding: 0;
+        border:none;
+        .btn-link {
+            color: $primary;
+            padding: 15px;
+            width: 100%;
+            text-align:left;
+            line-height: 1;
+            border-radius:0;
+
+            i {
+                float: right;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .card-header button[aria-expanded="true"] {
+        background-color: $primary;
+        color: $white;
+    }
+    .card-body {
+        background-color: $primary-lightest;
+        color: $primary;
+        border: none;
+
+        .service-list {
+            margin-top: 25px;
+            padding-left: 0;
+            li {
+                list-style-type: none;
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+
+        .service-button-list {
+            padding-left: 0;
+            font-size: 14px;
+            li {
+                list-style-type: none;
+                float: left;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.expand-btn {
+    text-align: right;
+    width: 100%;
+    color: $primary;
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Service Single Styles */
+
+.service-cta-wrap {
+    .service-cta-content {
+        color: $primary;
+        line-height: 30px;
+        padding-left: 0;
+    }
+
+    .service-cta-btn {
+        text-align: center;
+        padding-right: 0;
+
+        .btn {
+            padding: 10px 25px;
+        }
+    }
+}
+
+.service-sub-pages {
+    h4 {
+        color: $dark;
+    }
+    .service-list {
+        margin-top: 25px;
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            margin-left: 0;
+            margin-bottom: 5px;
+        }
+    }
+}
+/* Industry Page Styles */
+
+.industry-card {
+    background-color: rgba(35,31,32,0.03);
+    margin-bottom: 55px;
+    strong.title {
+        display: block;
+        width: 100%;
+        background-color: $dark;
+        color: $white;
+        padding: 20px;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    p {
+        padding: 40px;
+        margin-bottom: 0;
+    }
+
+    ul {
+        font-size: 14px;
+        list-style: none;
+        padding: 0 40px 40px;
+        margin-bottom: 0;
+        display: inline-block;
+
+        li {
+            float:left;
+            margin-right: 15px;
+            color: $primary;
+        }
+    }
+}
+
+.industry-list {
+    margin-top: 40px;
+}
+
+.breadcrumb {
+    background: none;
+    padding: 30px 15px;
+    color: $primary;
+
+    .row {
+        padding: 0 15px;
+        .col-md-12 {
+            & > span {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.breadcrumb + .main-content {
+    .row {
+        margin-top: 0;
+    }
+}
+
+/* Atchive Locations Styles */
+
+.map-wrap {
+    padding: 0;
+    .acf-map {
+    	width: 100%;
+    	height: 60vh;
+
+    }
+
+    /* fixes potential theme css conflict */
+    .acf-map img {
+       max-width: inherit !important;
+    }
+}
+
+.single-location {
+    color: $primary;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 50px;
+
+    .location-logo {
+        margin-bottom: 10px;
+    }
+
+    li {
+        &:last-child {
+            margin-top: 20px;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+}
+
+#search-filter-form-5438 ul {
+    padding-left: 0;
+}
+.searchandfilter select.sf-input-select {
+    width: 100%;
+}
